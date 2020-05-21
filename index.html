@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Java Arrays Exercise</title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+
+    // movie array
+    var movies=["star wars", "shrek", "blazing saddles", "my big fat greek wedding"]
+    // user-prompt to enter favorite movie, then take resulting string and make lower case
+    var confirmMovie=prompt("What is your favorite movie?").toLowerCase();
+    // if/else where if string not in array (index of -1), poop out bad movie alert; if in array, poop out excellent choice
+    if(movies.indexOf(confirmMovie) === -1) {
+        alert("Nope, bad movie.")
+    }
+
+    else {
+        alert("Excellent choice!")
+    }
+    
+    // country array
+    var countries=["italy", "united kingdom", "big sur", "portugal"]
+    // user-prompt to enter a country to which they've traveled, then take resulting string and make lower case
+    var confirmCountries=prompt("What is your favorite place you've traveled to?").toLowerCase();
+
+    // if/else where if string not in array (index of -1), poop out bad country alert; if in array, poop out love that country
+    if(countries.indexOf(confirmCountries) === -1){
+        alert("Nope, bad place.")
+    }
+
+    else {
+        alert("Wow, love that place!")
+    }
+
+    </script>
+  </body>
+</html>
